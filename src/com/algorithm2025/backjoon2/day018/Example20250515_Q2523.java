@@ -8,7 +8,7 @@ public class Example20250515_Q2523 { //별찍기
         int N = sc.nextInt();
         for(int i = 1; i <N; i++){
             for(int j = 0; j <= 2*N+1; j--){
-                if(j<i)
+                if(i<=N&&j<i||i>N&&j+i<2*N)
                 System.out.print("*");
                 else break;
             }
