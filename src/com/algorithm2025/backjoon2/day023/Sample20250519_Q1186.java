@@ -1,4 +1,4 @@
-package com.algorithm2025.backjoon2;
+package com.algorithm2025.backjoon2.day023;
 
 import java.util.ArrayDeque;
 import java.util.LinkedList;

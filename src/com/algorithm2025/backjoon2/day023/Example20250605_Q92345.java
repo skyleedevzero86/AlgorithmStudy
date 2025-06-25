@@ -1,4 +1,4 @@
-package com.algorithm2025.backjoon2;
+package com.algorithm2025.backjoon2.day023;
 
 public class Example20250605_Q92345 { //코딩테스트 연습 2022 KAKAO BLIND RECRUITMENT  사라지는 발판
 
