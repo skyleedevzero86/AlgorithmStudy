@@ -3,6 +3,7 @@ package com.algorithm2025.backjoon4.day025;
 import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -23,18 +24,18 @@ class TreeNode2 {
 }
 
 public class Example251202_Q42892 {
-    // Comparator for sorting the nodes
+
     private static class TreeNodeComparator implements java.util.Comparator<TreeNode2> {
         @Override
         public int compare(TreeNode2 a, TreeNode2 b) {
             if (a.y != b.y) {
-                return Integer.compare(b.y, a.y); // Descending order by y
+                return Integer.compare(b.y, a.y);
             }
-            return Integer.compare(a.x, b.x); // Ascending order by x
+            return Integer.compare(a.x, b.x);
         }
     }
 
-    // Method to build the binary tree
+
     private static void buildBinaryTree(TreeNode2 root, TreeNode2 child) {
         if (root.x > child.x) {
             if (root.left == null) {
@@ -51,7 +52,7 @@ public class Example251202_Q42892 {
         }
     }
 
-    // Method for preorder traversal
+
     private static void preOrder(TreeNode2 root, List<Integer> result) {
         if (root == null) return;
         result.add(root.idx);
@@ -59,7 +60,7 @@ public class Example251202_Q42892 {
         preOrder(root.right, result);
     }
 
-    // Method for postorder traversal
+
     private static void postOrder(TreeNode2 root, List<Integer> result) {
         if (root == null) return;
         postOrder(root.left, result);
@@ -67,7 +68,7 @@ public class Example251202_Q42892 {
         result.add(root.idx);
     }
 
-    // Main method to solve the problem
+
     public static List<List<Integer>> solution(int[][] nodeinfo) {
         List<TreeNode2> nodes = new ArrayList<>();
         for (int i = 0; i < nodeinfo.length; i++) {
@@ -77,7 +78,7 @@ public class Example251202_Q42892 {
             nodes.add(new TreeNode2(idx, x, y));
         }
 
-        // Sort nodes by y descending and then by x ascending
+
         Collections.sort(nodes, new TreeNodeComparator());
 
         TreeNode2 root = nodes.get(0);
