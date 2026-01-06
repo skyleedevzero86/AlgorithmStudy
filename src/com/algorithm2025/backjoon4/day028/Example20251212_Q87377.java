@@ -1,5 +1,8 @@
 package com.algorithm2025.backjoon4.day028;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Example20251212_Q87377 {
     public String[] solution(int[][] line) {
         int N = line.length;
