@@ -3,6 +3,7 @@
 # User-specific configurations
 ### Gradle ###
 /src/com/datastructure
+/src/com/dpstudy
 build/
 gradle/
 gradlew
