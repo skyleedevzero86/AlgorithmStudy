@@ -1,5 +1,7 @@
 package com.algorithm2026.programers2.day005;
 
+import java.util.*;
+
 public class Example20260508_Q468381 { // 2025 카카오 하반기 2차 기차선로
     static final int[] DR = {-1, 0, 1, 0};
     static final int[] DC = {0, 1, 0, -1};
