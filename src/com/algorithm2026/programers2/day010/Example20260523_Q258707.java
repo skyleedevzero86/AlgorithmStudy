@@ -1,5 +1,7 @@
 package com.algorithm2026.programers2.day010;
 
+import java.util.*;
+
 public class Example20260523_Q258707 { //2024 KAKAO WINTER INTERNSHIP  n + 1 카드게임  복습
     private static int n;
     private static int coinCount;
