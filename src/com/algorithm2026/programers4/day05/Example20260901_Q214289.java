@@ -1,5 +1,5 @@
 //2023 현대모비스 알고리즘 경진대회 예선 에어컨
-
+package com.algorithm2026.programers4.day05;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
