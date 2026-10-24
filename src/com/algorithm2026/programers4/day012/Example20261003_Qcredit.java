@@ -1,4 +1,4 @@
-package com.algorithm2026.programers4.day011;
+package com.algorithm2026.programers4.day012;
 
 public class Example20261003_Qcredit{ //학습 크레딧 최소 조합
     public int minimumModules(int[] credits, int target) {
